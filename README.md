@@ -1,2 +1,2 @@
 # 胡多通的个人简历
-游戏实现
+Resume: https://hudt.github.io/index.html
