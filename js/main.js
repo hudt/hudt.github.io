@@ -1,4 +1,18 @@
 function resizeContainer() {
+	var percent = $("#percent");
+	var percentNumber = 0;
+	var intervalId = setInterval(function(){
+		if(percentNumber < 100) {
+			percent.text(percentNumber ++);
+		} else {
+			percent.text(100);
+			clearInterval(intervalId);
+			loading.delay(300).animate({top: ['-100%', 'easeOutCubic']}, 1000, function() {});
+			gameContainer.delay(300).animate({top: ['0', 'easeOutCubic']}, 1000, function() {});
+		}
+	},50);
+	
+	
 }
 function showPressPromptText() {
 	if(pressPromptText.is(":hidden")) {
@@ -118,6 +132,7 @@ function showSkill() {
 }
 
 var gameContainer = $("#game-container");
+var loading = $("#loading");
 var pressPromptText = $("#press-prompt-text");
 var pageGround1 = $('#page-ground-1');
 var pageGround2 = $('#page-ground-2');
