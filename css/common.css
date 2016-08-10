@@ -34,7 +34,7 @@ body {
 	position: absolute;
     left: 0;
     top: 80%;
-    width: 4500px;
+    width: 9500px;
     height: 90%;
 }
 .grass {
@@ -48,13 +48,6 @@ body {
 	height: 100%;
     width: 100%;
     background-image: url(../img/ground.png);
-}
-.ground-container2 {
-	position: absolute;
-    left: 4500px;
-    top: 65%;
-    width: 2000px;
-    height: 90%;
 }
 
 
@@ -112,8 +105,10 @@ body {
 	width: 1200px;
 }
 #chapter-4 {
-	height: 65%;
 	width: 2000px;
+}
+#chapter-5 {
+	width: 1330px;
 }
 
 .school-gate {
@@ -254,33 +249,120 @@ body {
     top: 66px;
     left: 100px;
 }
-
+.project-container {
+	padding: 30px 50px;
+}
 .chinasoft-project {
 	position: absolute;
 	left: 430px;
-	bottom: 50px;
-	width: 400px;
+	bottom: -100%;
+	width: 500px;
 	text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     background-color: #0072bc;
     font-family: "微软雅黑";
 }
+.chinasoft-project .project-container {
+	background: #6197ba;
+}
 .chinasoft-project .project-name {
 	font-size: 40px;
+}
+.certificate-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/certificate.png) no-repeat;
 }
 
 .asiacom-project {
 	position: absolute;
-	left: 430px;
-	bottom: 50px;
-	width: 400px;
+	bottom: -100%;
+	width: 500px;
 	text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     background-color: #f74444;
     font-family: "微软雅黑";
 }
+.asiacom-project .project-container {
+	background: #ff6262;
+}
 .asiacom-project .project-name {
 	font-size: 40px;
+}
+
+#asiacom-project-1 {
+	left: 430px;
+}
+#asiacom-project-2 {
+	left: 1030px;
+}
+#asiacom-project-3 {
+	left: 1630px;
+}
+#asiacom-project-4 {
+	left: 2230px;
+}
+
+#jfb {
+    position: absolute;
+	background: url(../img/jfb.png) no-repeat;
+	bottom: 0;
+	left: 1000px;
+    width: 131px;
+    height: 500px;
+}
+#dlt {
+    position: absolute;
+	background: url(../img/dlt.png) no-repeat;
+	bottom: 0;
+	left: 1132px;
+    width: 670px;
+    height: 300px;
+}
+#cqk {
+    position: absolute;
+	background: url(../img/cqk.png) no-repeat;
+	bottom: 0;
+	left: 1700px;
+    width: 623px;
+    height: 438px;
+}
+
+.ribbon-container {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    top: 5%;
+    text-align: center;
+    left: 10%;
+}
+.ribbon-left {
+    position: relative;
+    float: left;
+    width: 55px;
+    height: 75px;
+    margin-right: -1px;
+    background-image: url("../img/ribbon-left.png");
+}
+.ribbon-middle {
+    position: relative;
+    float: left;
+    height: 50px;
+    background-color: rgb(237, 28, 36);
+    font-family: '微软雅黑';
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
+.ribbon-right {
+    position: relative;
+    float: left;
+    width: 55px;
+    height: 75px;
+    margin-left: -1px;
+    background-image: url("../img/ribbon-right.png");
 }

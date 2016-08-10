@@ -25,6 +25,15 @@ function checkDisplay() {
 	if(!isGraduateJump && pageYOffset >= 1500) {
 		graduateJumpStart();
 	}
+	if(!isChinasoftProjectDisplay && pageYOffset >= 2700) {
+		showChinasoftProject();
+	}
+	if(!isAsiacomPorjectDisplay && pageYOffset >= 3860) {
+		showAsiacomProject();
+	}
+	if(!isChongqingDisplay && pageYOffset >= 5760) {
+		showChongqing();
+	}
 	/*if(pageYOffset >= 2600 && pageYOffset <= 3600) {
 		var degrees = 90 * (2600 - pageYOffset) / (3600 - 2600)
 		rotate($("#game-container"), degrees);
@@ -57,11 +66,28 @@ function graduateJumpUp() {
 function graduateJumpDown() {
 	graduate.stop().animate({bottom: [50, 'easeInCubic']}, 300, function() {});
 }
+function showChinasoftProject() {
+	isChinasoftProjectDisplay = true;
+	chinasoftProject.stop().animate({bottom: [50, 'easeOutSine']}, 300, function() {});
+}
+function showAsiacomProject() {
+	isAsiacomPorjectDisplay = true;
+	$("#asiacom-project-1").stop().animate({bottom: [50, 'easeOutSine']}, 300, function() {});
+	$("#asiacom-project-2").stop().delay(1000).animate({bottom: [50, 'easeOutSine']}, 300, function() {});
+}
+function showChongqing() {
+	isChongqingDisplay = true;
+	$("#jfb").stop().animate({left: [0, 'easeOutCubic']}, 300, function() {});
+	$("#dlt").stop().delay(300).animate({left: [132, 'easeOutCubic']}, 300, function() {});
+	$("#cqk").stop().delay(600).animate({left: [700, 'easeOutCubic']}, 300, function() {});
+}
 
 var pageGround = $('#page-ground');
 var chapters = $(".chapter");
 var graduate = $(".graduate");
-var isCourseStarDisplay = 0, isGraduateJump = 0;
+var chinasoftProject = $(".chinasoft-project");
+var isCourseStarDisplay = 0, isGraduateJump = 0, isChinasoftProjectDisplay = 0,
+isAsiacomPorjectDisplay = 0, isChongqingDisplay = 0;
 window.onload = function () {
 	resizeContainer();
 }
