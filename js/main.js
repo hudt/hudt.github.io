@@ -10,7 +10,7 @@ function resizeContainer() {
 			loading.delay(300).animate({top: ['-100%', 'easeOutCubic']}, 1000, function() {});
 			gameContainer.delay(300).animate({top: ['0', 'easeOutCubic']}, 1000, function() {});
 		}
-	},50);
+	},20);
 	
 	
 }
