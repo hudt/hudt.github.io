@@ -76,7 +76,7 @@ function checkDisplay() {
 	if(!isAsiacomPorjectDisplay && pageYOffset >= 4360) {
 		showAsiacomProject();
 	}
-	if(!isChongqingDisplay && pageYOffset >= 6160) {
+	if(!isChongqingDisplay && pageYOffset >= 5960) {
 		showChongqing();
 	}
 	if(!isBjgPorjectDisplay && pageYOffset >= 7700) {
@@ -97,6 +97,10 @@ function checkDisplay() {
 	
 	if(!isSkillDisplay && pageYOffset >= 9200) {
 		showSkill();
+	}
+	
+	if(!isBallonDisplay && pageYOffset >= 9900) {
+		showBallon();
 	}
 }
 function showCourseStar() {
@@ -145,6 +149,33 @@ function showSkill() {
 		});
 	});
 }
+function showBallon() {
+	isBallonDisplay = true;
+	$(".ballen").each(function(i){
+		$(this).stop().delay(i * 200).animate({bottom:[(i%3) * 180 , 'easeOutCubic']}, 800, function() {
+			if(i == $(".ballen").length - 1) {
+				setInterval(function(){
+					var random1 = parseInt(Math.random() * $(".ballen").length);
+					var random2 = parseInt(Math.random() * $(".ballen").length);
+					if(random2 == random1) {
+						random1 = 0;
+					}
+					if(random2 == random1) {
+						random1 = 1;
+					}
+					var first = $(".ballen:eq("+random1+")");
+					var second = $(".ballen:eq("+random2+")");
+					first.stop().animate({bottom:[second.css("bottom") , 'easeOutCubic'], left:[second.css("left") , 'easeOutCubic']}, 800, function() {});
+					second.stop().animate({bottom:[first.css("bottom") , 'easeOutCubic'], left:[first.css("left") , 'easeOutCubic']}, 800, function() {});
+				},1000);
+			}
+		});
+		
+	});
+	
+	
+	
+}
 
 var gameContainer = $("#game-container");
 var loading = $("#loading");
@@ -156,7 +187,7 @@ var pageBackground = $('#page-background');
 var chapters = $(".chapter");
 var graduate = $(".graduate");
 var chinasoftProject = $(".chinasoft-project");
-var isCourseStarDisplay = 0, isGraduateJump = 0, isChinasoftProjectDisplay = 0,
+var isCourseStarDisplay = 0, isGraduateJump = 0, isChinasoftProjectDisplay = 0, isBallonDisplay = 0,
 isAsiacomPorjectDisplay = 0, isChongqingDisplay = 0, isBjgPorjectDisplay = 0, isSkillDisplay = 0,
 isScrolled = 0, startScrollCount = 0, stopScrollCount = 0;
 window.onload = function () {
