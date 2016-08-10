@@ -231,13 +231,14 @@ body {
 #hudt-container {
 	position: absolute;
 	left: 50%;
-	bottom: 66.6px;
+	bottom: 0px;
+	z-index: 2;
 }
 #hudt {
     position: relative;
     left: -50%;
     width: 200px;
-    height: 175px;
+    height: 135px;
     overflow: hidden;
 }
 
@@ -245,8 +246,8 @@ body {
 	left: 0;
     top: 0;
     width: 1800px;
-    height: 400px;
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/hudt.png);
+    height: 100px;
+    background: url(../img/IMG00000.png) no-repeat;
 }
 
 

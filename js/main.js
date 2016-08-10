@@ -1,4 +1,6 @@
 function resizeContainer() {
+}
+function showLoading() {
 	var percent = $("#percent");
 	var percentNumber = 0;
 	var intervalId = setInterval(function(){
@@ -10,9 +12,7 @@ function resizeContainer() {
 			loading.delay(300).animate({top: ['-100%', 'easeOutCubic']}, 1000, function() {});
 			gameContainer.delay(300).animate({top: ['0', 'easeOutCubic']}, 1000, function() {});
 		}
-	},20);
-	
-	
+	},2);
 }
 function showPressPromptText() {
 	if(pressPromptText.is(":hidden")) {
@@ -28,13 +28,28 @@ function showPressPromptText() {
 		}
 	},500);
 }
+var switcher = 0;
+function moveHudt() {
+}
+
+function changeHudt() {
+	hudt.css("background", "url(../img/IMG0000"+switcher+".png) no-repeat");
+	switcher ++;
+	if(switcher == 9) {
+		switcher = 0;
+	}
+}
 
 function doAfterScroll() {
 	isScrolled = true;
+	startScrollCount ++
 	movePageGound();
 	movePageBackground();
 	moveChapters();
 	checkDisplay();
+	setTimeout(function(){
+		stopScrollCount ++;
+	},1000);
 }
 
 
@@ -49,22 +64,22 @@ function moveChapters() {
 	chapters.css('left', -pageYOffset);
 }
 function checkDisplay() {
-	if(!isCourseStarDisplay && pageYOffset >= 900) {
+	if(!isCourseStarDisplay && pageYOffset >= 1100) {
 		showCourseStar();
 	}
-	if(!isGraduateJump && pageYOffset >= 1500) {
+	if(!isGraduateJump && pageYOffset >= 1200) {
 		graduateJumpStart();
 	}
-	if(!isChinasoftProjectDisplay && pageYOffset >= 2700) {
+	if(!isChinasoftProjectDisplay && pageYOffset >= 3200) {
 		showChinasoftProject();
 	}
-	if(!isAsiacomPorjectDisplay && pageYOffset >= 3860) {
+	if(!isAsiacomPorjectDisplay && pageYOffset >= 4360) {
 		showAsiacomProject();
 	}
-	if(!isChongqingDisplay && pageYOffset >= 5760) {
+	if(!isChongqingDisplay && pageYOffset >= 6160) {
 		showChongqing();
 	}
-	if(!isBjgPorjectDisplay && pageYOffset >= 7600) {
+	if(!isBjgPorjectDisplay && pageYOffset >= 7700) {
 		showBjgProject();
 	}
 	
@@ -94,7 +109,7 @@ function showCourseStar() {
 }
 function graduateJumpStart() {
 	isGraduateJump = true;
-	graduateAnimationTimer = setInterval(function(){graduateJumpUp()}, 3000);
+	graduateAnimationTimer = setInterval(function(){graduateJumpUp()}, 1000);
 	
 }
 function graduateJumpUp() {
@@ -134,6 +149,7 @@ function showSkill() {
 var gameContainer = $("#game-container");
 var loading = $("#loading");
 var pressPromptText = $("#press-prompt-text");
+var hudt = $("#hudt-sildes")
 var pageGround1 = $('#page-ground-1');
 var pageGround2 = $('#page-ground-2');
 var pageBackground = $('#page-background');
@@ -142,9 +158,10 @@ var graduate = $(".graduate");
 var chinasoftProject = $(".chinasoft-project");
 var isCourseStarDisplay = 0, isGraduateJump = 0, isChinasoftProjectDisplay = 0,
 isAsiacomPorjectDisplay = 0, isChongqingDisplay = 0, isBjgPorjectDisplay = 0, isSkillDisplay = 0,
-isScrolled = 0;
+isScrolled = 0, startScrollCount = 0, stopScrollCount = 0;
 window.onload = function () {
 	resizeContainer();
+	showLoading();
 	showPressPromptText();
 }
 window.onresize = function () {
