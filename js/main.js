@@ -1,7 +1,22 @@
 function resizeContainer() {
 }
+function showPressPromptText() {
+	if(pressPromptText.is(":hidden")) {
+		pressPromptText.show();
+	} else {
+		pressPromptText.hide();
+	}
+	setTimeout(function(){
+		if(!isScrolled) {
+			showPressPromptText();
+		} else {
+			pressPromptText.hide();
+		}
+	},500);
+}
 
 function doAfterScroll() {
+	isScrolled = true;
 	movePageGound();
 	movePageBackground();
 	moveChapters();
@@ -10,10 +25,11 @@ function doAfterScroll() {
 
 
 function movePageGound() {
-	pageGround.css('left', -pageYOffset);
+	pageGround1.css('left', -pageYOffset);
+	pageGround2.css('left', 8100-pageYOffset);
 }
 function movePageBackground() {
-	
+	pageBackground.css('left', -pageYOffset / 8);
 }
 function moveChapters() {
 	chapters.css('left', -pageYOffset);
@@ -34,18 +50,25 @@ function checkDisplay() {
 	if(!isChongqingDisplay && pageYOffset >= 5760) {
 		showChongqing();
 	}
-	/*if(pageYOffset >= 2600 && pageYOffset <= 3600) {
-		var degrees = 90 * (2600 - pageYOffset) / (3600 - 2600)
-		rotate($("#game-container"), degrees);
-	} else if(pageYOffset < 2600){
-		rotate($("#game-container"), 0);
-	} else if(pageYOffset > 3600 && pageYOffset <= 5000){
-		var degrees = -90 - 90 * (3600 - pageYOffset) / (5000 - 3600)
-		rotate($("#game-container"), degrees);
-	} else if(pageYOffset > 5000 && pageYOffset <= 6000){
-		var degrees = 90 * (5000 - pageYOffset) / (6000 - 5000)
-		rotate($("#game-container"), degrees);
-	}*/
+	if(!isBjgPorjectDisplay && pageYOffset >= 7600) {
+		showBjgProject();
+	}
+	
+	if(pageYOffset >= 8360 && pageYOffset <= 9300) {
+		var degrees = 90 * (8360 - pageYOffset) / (9300 - 8360)
+		rotate(gameContainer, degrees);
+		rotate(pageBackground, -degrees);
+	} else if(pageYOffset > 9300) {
+		rotate(gameContainer, -90);
+		rotate(pageBackground, 90);
+	} else if(pageYOffset < 8360) {
+		rotate(gameContainer, 0);
+		rotate(pageBackground, 0);
+	}
+	
+	if(!isSkillDisplay && pageYOffset >= 9200) {
+		showSkill();
+	}
 }
 function showCourseStar() {
 	isCourseStarDisplay = true;
@@ -81,15 +104,33 @@ function showChongqing() {
 	$("#dlt").stop().delay(300).animate({left: [132, 'easeOutCubic']}, 300, function() {});
 	$("#cqk").stop().delay(600).animate({left: [700, 'easeOutCubic']}, 300, function() {});
 }
+function showBjgProject() {
+	isBjgPorjectDisplay = true;
+	$("#bjg-project-1").stop().animate({bottom: [10, 'easeOutCubic']}, 300, function() {});
+}
+function showSkill() {
+	isSkillDisplay = true;
+	$(".skill-star").each(function(m){
+		$(this).find("b").each(function(i){
+			$(this).stop().delay(m * 300 + i * 300).animate({top:[i * 50 , 'easeOutElastic']}, 800, function() {});
+		});
+	});
+}
 
-var pageGround = $('#page-ground');
+var gameContainer = $("#game-container");
+var pressPromptText = $("#press-prompt-text");
+var pageGround1 = $('#page-ground-1');
+var pageGround2 = $('#page-ground-2');
+var pageBackground = $('#page-background');
 var chapters = $(".chapter");
 var graduate = $(".graduate");
 var chinasoftProject = $(".chinasoft-project");
 var isCourseStarDisplay = 0, isGraduateJump = 0, isChinasoftProjectDisplay = 0,
-isAsiacomPorjectDisplay = 0, isChongqingDisplay = 0;
+isAsiacomPorjectDisplay = 0, isChongqingDisplay = 0, isBjgPorjectDisplay = 0, isSkillDisplay = 0,
+isScrolled = 0;
 window.onload = function () {
 	resizeContainer();
+	showPressPromptText();
 }
 window.onresize = function () {
 	resizeContainer()

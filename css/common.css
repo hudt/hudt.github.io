@@ -6,7 +6,7 @@ body {
 	left: 0;
     top: 0;
     width: 100%;
-    height: 27315px;
+    height: 10700px;
 }
 
 #game-container {
@@ -15,7 +15,143 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+}
+
+.tree-1
+{
+	position:absolute;
+	width: 256px;
+	height: 256px;
+	background-image:url(../img/tree-1.png);
+    bottom: 0;
+    z-index: -1;
+}
+
+.tree-2
+{
+	position:absolute;
+	width: 256px;
+	height: 256px;
+	background-image:url(../img/tree-2.png);
+    bottom: 0;
+    z-index: -1;
+}
+.tree-3
+{
+	position:absolute;
+	width: 298px;
+	height: 256px;
+	background-image:url(../img/tree-3.png);
+	bottom: 0;
+	z-index: -1;
+}
+.tree-4
+{
+	position:absolute;
+	width: 298px;
+	height: 256px;
+	background-image:url(../img/tree-4.png);
+	bottom: 0;
+	z-index: -1;
+}
+.tree-5
+{
+	position:absolute;
+	width: 140px;
+	height: 95px;
+	background-image: url(../img/tree-5.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-6
+{
+	position:absolute;
+	width: 140px;
+	height: 185px;
+	background-image: url(../img/tree-6.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-7
+{
+	position:absolute;
+	width: 200px;
+	height: 300px;
+	background-image: url(../img/tree-7.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-8
+{
+	position:absolute;
+	width: 200px;
+	height: 430px;
+	background-image: url(../img/tree-8.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-9
+{
+	position:absolute;
+	width: 140px;
+	height: 95px;
+	background-image: url(../img/tree-9.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-10
+{
+	position:absolute;
+	width: 140px;
+	height: 185px;
+	background-image: url(../img/tree-10.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-11
+{
+	position:absolute;
+	width: 200px;
+	height: 240px;
+	background-image: url(../img/tree-11.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.tree-12
+{
+	position:absolute;
+	width: 200px;
+	height: 300px;
+	background-image: url(../img/tree-12.png);
+	bottom: 0;
+	z-index: -1;
+}
+
+.cloud-1
+{
+	position:absolute;
+	width: 200px;
+	height: 118px;
+	background-image: url(../img/bgcloud1.png);
+	top: 0;
+	z-index: -1;
+}
+
+.cloud-2
+{
+	position:absolute;
+	width: 128px;
+	height: 128px;
+	background-image: url(../img/bgcloud2.png);
+	top: 0;
+	z-index: -1;
 }
 
 .page {
@@ -24,19 +160,33 @@ body {
     top: 100%;
     height: 100%;
 }
-#page-ground {
-    width: 22500px;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+#page-background {
+	position: absolute;
+	width: 2000px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: -1;
 }
-.ground-container1 {
+#page-ground-1 {
+    width: 8100px;
+    left: 0px;
+    top: 80%;
+    height: 90%;
+}
+#page-ground-2 {
+    width: 1200px;
+    left: 8100px;
+    top: 65%;
+    height: 90%;
+}
+/*.ground-container1 {
 	position: absolute;
     left: 0;
     top: 80%;
-    width: 9500px;
+    width: 8100px;
     height: 90%;
-}
+}*/
 .grass {
 	position: absolute;
     background-image: url(../img/grass.png);
@@ -49,11 +199,18 @@ body {
     width: 100%;
     background-image: url(../img/ground.png);
 }
-
+.press-prompt-text {
+	position: absolute;
+	height: 50px;
+	top: 66px;
+	font-size: 30px;
+	color: #fff;
+	left: 400px;
+}
 
 #page-chapter {
 	top: 0;
-	width: 10000px;
+	width: 20000px;
 }
 
 #hudt-container {
@@ -87,7 +244,7 @@ body {
 #chapter-1 {
 	width: 1366px;
 }
-#chapter-1 #obj-word-1 {
+.chapter-1-relative {
 	position: absolute;
     top: 35%;
     width: 550px;
@@ -96,6 +253,12 @@ body {
     color: #fff;
     margin-left: -275px;
     font-size: 80px;
+}
+#chapter-1 #obj-word-1 {
+	
+}
+#chapter-1 #obj-word-2 {
+    font-size: 40px;
 }
 
 #chapter-2 {
@@ -108,7 +271,15 @@ body {
 	width: 2000px;
 }
 #chapter-5 {
+	width: 1630px;
+}
+#chapter-6 {
+	width: 1430px;
+	height: 65%;
+}
+#chapter-7 {
 	width: 1330px;
+    transform: rotate(90deg);
 }
 
 .school-gate {
@@ -116,7 +287,7 @@ body {
     bottom: 0;
     width: 320px;
     height: 300px;
-    background-image: url(../img/gate_orange.png);
+    background-image: url(../img/gate_red.png);
 }
 
 .school-name {
@@ -354,7 +525,6 @@ body {
     float: left;
     height: 50px;
     background-color: rgb(237, 28, 36);
-    font-family: '微软雅黑';
     color: rgb(255, 255, 255);
     font-size: 36px;
 }
@@ -365,4 +535,123 @@ body {
     height: 75px;
     margin-left: -1px;
     background-image: url("../img/ribbon-right.png");
+}
+
+
+.gate.bjg-gate {
+    background-image: url(../img/gate_yellow.png);
+}
+.bjg-project {
+	position: absolute;
+	bottom: -800px;
+	width: 500px;
+	text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #f4d964;
+    font-family: "微软雅黑";
+}
+.bjg-project .project-container {
+	background: #f4c600;
+}
+#bjg-project-1 {
+	left: 400px;
+}
+
+
+
+.skills {
+	font-family: "微软雅黑";
+	position: absolute;
+	left: 500px;
+    bottom: 0;
+    width: 600px;
+    height: 300px;
+}
+
+.skills .skill-title {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+}
+.skills .skill-label {
+	position: absolute;
+	top: 80px;
+	width: 600px;
+}
+.skills .skill-name {
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+}
+.skills #skill-name-1 {
+	left: 0;
+}
+.skills #skill-name-2 {
+	left: 170px;
+}
+.skills #skill-name-3 {
+	left: 320px;
+}
+.skills #skill-name-4 {
+	left: 450px;
+}
+
+.skills .skill-stars {
+	position: absolute;
+	top: 140px;
+	width: 50px;
+}
+
+.skills .skill-stars .skill-star {
+	position: absolute;
+	width: 50px;
+}
+
+.skills .skill-stars b {
+	position: absolute;
+	top: -1000px;
+	width: 48px;
+	height: 48px;
+	background: url(../img/cloud.png);
+}
+
+#skill-star-1 {
+	left: 20px;
+}
+#skill-star-2 {
+	left: 173px;
+}
+#skill-star-3 {
+	left: 320px;
+}
+#skill-star-4 {
+	left: 470px;
+}
+
+
+.final-project {
+	/*font-family: "微软雅黑";
+	position: absolute;
+	left: 500px;
+    bottom: 0;
+    width: 600px;
+    height: 300px;
+    top: -300px;
+    text-align: center;
+	color: #fff;
+	font-size: 60px;*/
+	
+	position: absolute;
+	top: -300px;
+	left: 500px;
+	width: 500px;
+	text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #f4d964;
+    font-family: "微软雅黑";
 }
