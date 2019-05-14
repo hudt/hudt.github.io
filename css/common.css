@@ -37,7 +37,7 @@ body {
 	position:absolute;
 	width: 256px;
 	height: 256px;
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/tree-1.png);
+	background-image:url(/img/tree-1.png);
     bottom: 0;
     z-index: -1;
 }
@@ -47,7 +47,7 @@ body {
 	position:absolute;
 	width: 256px;
 	height: 256px;
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/tree-2.png);
+	background-image:url(/img/tree-2.png);
     bottom: 0;
     z-index: -1;
 }
@@ -56,7 +56,7 @@ body {
 	position:absolute;
 	width: 298px;
 	height: 256px;
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/tree-3.png);
+	background-image:url(/img/tree-3.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -65,7 +65,7 @@ body {
 	position:absolute;
 	width: 298px;
 	height: 256px;
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/tree-4.png);
+	background-image:url(/img/tree-4.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -74,7 +74,7 @@ body {
 	position:absolute;
 	width: 140px;
 	height: 95px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-5.png);
+	background-image: url(/img/tree-5.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -84,7 +84,7 @@ body {
 	position:absolute;
 	width: 140px;
 	height: 185px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-6.png);
+	background-image: url(/img/tree-6.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -94,7 +94,7 @@ body {
 	position:absolute;
 	width: 200px;
 	height: 300px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-7.png);
+	background-image: url(/img/tree-7.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -104,7 +104,7 @@ body {
 	position:absolute;
 	width: 200px;
 	height: 430px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-8.png);
+	background-image: url(/img/tree-8.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -114,7 +114,7 @@ body {
 	position:absolute;
 	width: 140px;
 	height: 95px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-9.png);
+	background-image: url(/img/tree-9.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -124,7 +124,7 @@ body {
 	position:absolute;
 	width: 140px;
 	height: 185px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-10.png);
+	background-image: url(/img/tree-10.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -134,7 +134,7 @@ body {
 	position:absolute;
 	width: 200px;
 	height: 240px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-11.png);
+	background-image: url(/img/tree-11.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -144,7 +144,7 @@ body {
 	position:absolute;
 	width: 200px;
 	height: 300px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/tree-12.png);
+	background-image: url(/img/tree-12.png);
 	bottom: 0;
 	z-index: -1;
 }
@@ -154,7 +154,7 @@ body {
 	position:absolute;
 	width: 200px;
 	height: 118px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/bgcloud1.png);
+	background-image: url(/img/bgcloud1.png);
 	top: 0;
 	z-index: -1;
 }
@@ -164,7 +164,7 @@ body {
 	position:absolute;
 	width: 128px;
 	height: 128px;
-	background-image: url(http://obor2cgzj.bkt.clouddn.com/bgcloud2.png);
+	background-image: url(/img/bgcloud2.png);
 	top: 0;
 	z-index: -1;
 }
@@ -204,7 +204,7 @@ body {
 }*/
 .grass {
 	position: absolute;
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/grass.png);
+    background-image: url(/img/grass.png);
     width: 100%;
     height: 50px;
 }
@@ -212,7 +212,7 @@ body {
     position: absolute;
 	height: 100%;
     width: 100%;
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/ground.png);
+    background-image: url(/img/ground.png);
 }
 .press-prompt-text {
 	position: absolute;
@@ -247,7 +247,7 @@ body {
     top: 0;
     width: 1800px;
     height: 100px;
-    background: url(http://obor2cgzj.bkt.clouddn.com/IMG00000.png) no-repeat;
+    background: url(/img/IMG00000.png) no-repeat;
 }
 
 
@@ -309,7 +309,7 @@ body {
     bottom: 0;
     width: 320px;
     height: 300px;
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/gate_red.png);
+    background-image: url(/img/gate_red.png);
 }
 
 .school-name {
@@ -385,7 +385,7 @@ body {
 	top: 1000px;
 	width: 48px;
 	height: 48px;
-	background: url(http://obor2cgzj.bkt.clouddn.com/star.png);
+	background: url(/img/star.png);
 }
 
 #course-star-1 {
@@ -408,7 +408,7 @@ body {
     bottom: 50px;
 	width: 400px;
 	height: 271px;
-	background: url(http://obor2cgzj.bkt.clouddn.com/graduate400.png) no-repeat;
+	background: url(/img/graduate400.png) no-repeat;
 }
 
 
@@ -418,11 +418,11 @@ body {
     bottom: 0;
     width: 320px;
     height: 300px;
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/gate_red.png);
+    background-image: url(/img/gate_red.png);
 }
 
 .gate.chinasoft-gate {
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/gate_blue.png);
+    background-image: url(/img/gate_blue.png);
 }
 
 .gate-name {
@@ -468,7 +468,7 @@ body {
 	right: 10px;
 	width: 50px;
 	height: 50px;
-	background: url(http://obor2cgzj.bkt.clouddn.com/certificate.png) no-repeat;
+	background: url(/img/certificate.png) no-repeat;
 }
 
 .asiacom-project {
@@ -503,7 +503,7 @@ body {
 
 #jfb {
     position: absolute;
-	background: url(http://obor2cgzj.bkt.clouddn.com/jfb.png) no-repeat;
+	background: url(/img/jfb.png) no-repeat;
 	bottom: 0;
 	left: 1300px;
     width: 131px;
@@ -511,7 +511,7 @@ body {
 }
 #dlt {
     position: absolute;
-	background: url(http://obor2cgzj.bkt.clouddn.com/dlt.png) no-repeat;
+	background: url(/img/dlt.png) no-repeat;
 	bottom: 0;
 	left: 1432px;
     width: 670px;
@@ -519,7 +519,7 @@ body {
 }
 #cqk {
     position: absolute;
-	background: url(http://obor2cgzj.bkt.clouddn.com/cqk.png) no-repeat;
+	background: url(/img/cqk.png) no-repeat;
 	bottom: 0;
 	left: 2000px;
     width: 623px;
@@ -540,7 +540,7 @@ body {
     width: 55px;
     height: 75px;
     margin-right: -1px;
-    background-image: url("http://obor2cgzj.bkt.clouddn.com/ribbon-left.png");
+    background-image: url("/img/ribbon-left.png");
 }
 .ribbon-middle {
     position: relative;
@@ -556,12 +556,12 @@ body {
     width: 55px;
     height: 75px;
     margin-left: -1px;
-    background-image: url("http://obor2cgzj.bkt.clouddn.com/ribbon-right.png");
+    background-image: url("/img/ribbon-right.png");
 }
 
 
 .gate.bjg-gate {
-    background-image: url(http://obor2cgzj.bkt.clouddn.com/gate_yellow.png);
+    background-image: url(/img/gate_yellow.png);
 }
 .bjg-project {
 	position: absolute;
@@ -638,7 +638,7 @@ body {
 	top: -1000px;
 	width: 48px;
 	height: 48px;
-	background: url(http://obor2cgzj.bkt.clouddn.com/cloud.png);
+	background: url(/img/cloud.png);
 }
 
 #skill-star-1 {
@@ -673,25 +673,25 @@ body {
 	color: #fff;
 }
 .ballen-1 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-1.png);
+	background-image:url(/img/balloon-1.png);
 }
 .ballen-2 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-2.png);
+	background-image:url(/img/balloon-2.png);
 }
 .ballen-3 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-3.png);
+	background-image:url(/img/balloon-3.png);
 }
 .ballen-4 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-4.png);
+	background-image:url(/img/balloon-4.png);
 }
 .ballen-5 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-5.png);
+	background-image:url(/img/balloon-5.png);
 }
 .ballen-6 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-6.png);
+	background-image:url(/img/balloon-6.png);
 }
 .ballen-7 {
-	background-image:url(http://obor2cgzj.bkt.clouddn.com/balloon-7.png);
+	background-image:url(/img/balloon-7.png);
 }
 .final-project {
 	position: absolute;
